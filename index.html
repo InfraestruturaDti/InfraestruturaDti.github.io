@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilo para o iframe */
+    #link-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      overflow: hidden;
+    }
+
+    /* Estilo para a imagem dentro do iframe */
+    iframe img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+    }
+  </style>
+  <title>Cadastro de Links</title>
+  <script>
+    // Lista de links cadastrados
+    var links = [
+        "https://dti.ag/LinksGestoAVista1",
+        "https://dti.ag/LinksGestoAVista2",
+        "https://dti.ag/LinksGestoAVista3",
+        "https://dti.ag/LinksGestoAVista4",
+        "https://dti.ag/LinksGestoAVista5",
+        "https://dti.ag/LinksGestoAVista6",
+       ];
+        var indice = 0;
+    var intervalo;
+    function iniciarRotina() {
+      var iframe = document.getElementById("link-iframe");
+      iframe.src = links[indice];
+      indice = (indice + 1) % links.length;
+    }
+    function comecarRotina() {
+      iniciarRotina();
+      intervalo = setInterval(iniciarRotina, 18000);
+    }
+    function pararRotina() {
+      clearInterval(intervalo);
+    }
+    // Carrega a API do Player do YouTube de forma assíncrona
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    // Chama a função playVideo() assim que o player estiver pronto
+    var player;
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('video', {
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+  </script>
+</head>
+<body onload="comecarRotina()" onunload="pararRotina()">
+
+  <iframe id="link-iframe" src="" style="border: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allow="autoplay; encrypted-media" allowfullscreen loop></iframe>
+
+</body>
+</html>
