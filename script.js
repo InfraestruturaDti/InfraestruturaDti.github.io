@@ -19,3 +19,28 @@ function trocarImagem() {
 window.onload = function () {
     trocarImagem();
 };
+
+
+/*
+script para iframe
+*/
+
+var links = [
+    "https://drive.google.com/file/d/1D7oT6xbwJMZOuemyPI0H_0pNxY84dZmJ/preview",
+    "https://drive.google.com/file/d/13TPhtzS3TnrHEZlwqdUmhjVoryUHXsfE/preview",
+    "https://drive.google.com/file/d/1GagAgdX7h1PhncvP1Snpn5OxQ7YrYS9r/preview",
+];
+var indice = 0;
+var intervalo;
+function iniciarRotina() {
+    var iframe = document.getElementById("link-iframe");
+    iframe.src = links[indice];
+    indice = (indice + 1) % links.length;
+}
+function comecarRotina() {
+    iniciarRotina();
+    intervalo = setInterval(iniciarRotina, 18000);
+}
+function pararRotina() {
+    clearInterval(intervalo);
+}
