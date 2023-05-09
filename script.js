@@ -1,3 +1,8 @@
+/*
+Script para imagens.
+Utilize apenas imagens locais neste vetor, não links externos, não há suporte para outros links
+*/
+
 var imagens = [
     "imgs/testepresencial.png",
     "imgs/FormsFeedback.gif", 
@@ -22,7 +27,8 @@ window.onload = function () {
 
 
 /*
-script para iframe
+Script para iframe.
+Utilize apenas links embled ou links de outros sites, não arquivos diretos, estes costumam sair fora de formatação
 */
 
 var links = [
