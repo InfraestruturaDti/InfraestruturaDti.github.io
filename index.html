@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  </style>
+  <link rel="stylesheet" href="style.css">
   <title>Cadastro de Links</title>
   <script>
     // Lista de links cadastrados
     var links = [
+        "imgs/vemAi!.mp4",
         "https://dti.ag/LinksGestoAVista1",
         "https://dti.ag/LinksGestoAVista2",
         "https://dti.ag/LinksGestoAVista3",
@@ -13,7 +14,7 @@
         "https://dti.ag/LinksGestoAVista5",
         "https://dti.ag/LinksGestoAVista6",
        ];
-        var indice = 0;
+        var indice = 0;     
     var intervalo;
     function iniciarRotina() {
       var iframe = document.getElementById("link-iframe");
@@ -30,8 +31,12 @@
   </script>
 </head>
 <body onload="comecarRotina()" onunload="pararRotina()">
-
-  <iframe id="link-iframe" src="" style="border: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allow="autoplay; encrypted-media" allowfullscreen loop></iframe>
-
-</body>
+  <!--<iframe id="link-iframe" src="" autoplay="true" style="border: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allow="autoplay; encrypted-media"  autoplay allowfullscreen loop ></iframe>
+  -->
+  <object data="imgs/vemAi!.mp4" type="video/mp4" width="640" height="360">
+    <param name="autoplay" value="true">
+    <param name="loop" value="true">
+  </object>
+  
+  </body>
 </html>
