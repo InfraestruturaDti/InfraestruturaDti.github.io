@@ -4,14 +4,7 @@ Utilize apenas imagens locais neste vetor, não links externos, não há suporte
 */
 
 var imagens = [
-    "imgs/kitVideoConferencia.png",
-    "imgs/Keepers.png",
-    "imgs/gifcanva2.gif",
-    "imgs/CuidadoPrincipio.png",
-    "imgs/agilistas.gif",
-    "imgs/Orgulho.png"
-
-
+"imgs/Round.gif",
 ]; // array com as imagens
 var tempo = 23000; // tempo em milissegundos para trocar as imagens
 var indice = 0; // indice atual da imagem

@@ -1,4 +1,5 @@
 # InfraestruturaDti.github.io
+<<<<<<< HEAD
 
 Link para o site original:
 https://gestaoavistadti.github.io/
@@ -22,3 +23,6 @@ Codigo desenvolvido e aprimorado por:
 tito.chen@dtdigital.com.br
 
 Para mais informações, procure a infra!
+=======
+Aqui estão os scripts da infra
+>>>>>>> 183b2a35b3ea40ffcab29dce88adf65c0dd6da63
