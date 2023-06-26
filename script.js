@@ -4,7 +4,8 @@ Utilize apenas imagens locais neste vetor, não links externos, não há suporte
 */
 
 var imagens = [
-"imgs/Round.gif",
+    "imgs/Lojinha.gif",
+    "imgs/Round.gif",
 ]; // array com as imagens
 var tempo = 23000; // tempo em milissegundos para trocar as imagens
 var indice = 0; // indice atual da imagem
