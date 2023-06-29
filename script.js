@@ -4,10 +4,10 @@ Utilize apenas imagens locais neste vetor, não links externos, não há suporte
 */
 
 var imagens = [
+    "imgs/roundFIsico2.png",
     "imgs/Lojinha.gif",
     "imgs/roundFisico1.png",
     "imgs/Round.gif",
-    "imgs/roundFisico2.png",
 ]; // array com as imagens
 var tempo = 23000; // tempo em milissegundos para trocar as imagens
 var indice = 0; // indice atual da imagem
