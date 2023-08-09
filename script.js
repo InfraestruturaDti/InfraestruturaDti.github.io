@@ -4,14 +4,35 @@ Utilize apenas imagens locais neste vetor, não links externos, não há suporte
 */
 
 var imagens = [
-    "imgs/rackers/00.png",
-    "imgs/rackers/01.png",
-    "imgs/rackers/02.png",
-    "imgs/rackers/03.jpg",
-    "imgs/rackers/04.jpg",
-    "imgs/rackers/teste.png",
+
+"imgs/rackers/00.png",
+"imgs/rackers/0.gif",
+"imgs/rackers/01.png",
+"imgs/rackers/02.png",
+"imgs/rackers/03.jpg",
+"imgs/rackers/04.jpg",
+"imgs/rackers/05.jpg",
+"imgs/rackers/06.jpg",
+"imgs/rackers/07.jpg",
+"imgs/rackers/08.png",
+"imgs/rackers/10.png",
+"imgs/rackers/11.png",
+"imgs/rackers/12.png",
+"imgs/rackers/13.png",
+"imgs/rackers/14.png",
+"imgs/rackers/15.png",
+"imgs/rackers/16.png",
+"imgs/rackers/17.png",
+"imgs/rackers/18.png",
+"imgs/rackers/19.png",
+"imgs/rackers/20.png",
+"imgs/rackers/21.png",
+"imgs/rackers/22.jpg",
+"imgs/rackers/23.jpg",
+"imgs/rackers/24.jpg",
+
     ]; // array com as imagens
-var tempo = 12000; // tempo em milissegundos para trocar as imagens
+var tempo = 6000; // tempo em milissegundos para trocar as imagens
 var indice = 0; // indice atual da imagem
 
 function trocarImagem() {
