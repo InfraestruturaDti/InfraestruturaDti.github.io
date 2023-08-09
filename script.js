@@ -8,8 +8,9 @@ var imagens = [
     "imgs/rackers/02.png",
     "imgs/rackers/03.jpg",
     "imgs/rackers/04.jpg",
+    "imgs/rackers/teste.png",
 ]; // array com as imagens
-var tempo = 23000; // tempo em milissegundos para trocar as imagens
+var tempo = 12000; // tempo em milissegundos para trocar as imagens
 var indice = 0; // indice atual da imagem
 
 function trocarImagem() {
