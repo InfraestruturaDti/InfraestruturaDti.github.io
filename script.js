@@ -6,7 +6,7 @@ Utilize apenas imagens locais neste vetor, não links externos, não há suporte
 var imagens = [
     "imgs/rackers/01.png",
     "imgs/rackers/02.gif",
-    "imgs/rackers/03.png",
+    "imgs/rackers/03.jpg",
     "imgs/rackers/04.jpg",
 ]; // array com as imagens
 var tempo = 23000; // tempo em milissegundos para trocar as imagens
