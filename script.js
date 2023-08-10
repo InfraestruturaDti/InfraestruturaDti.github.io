@@ -11,7 +11,6 @@ var imagens = [
 "imgs/rackers/26v.gif",
 "imgs/rackers/01.png",
 "imgs/rackers/02.png",
-"imgs/rackers/03.jpg",
 "imgs/rackers/29v.gif",
 "imgs/rackers/25v.gif",
 "imgs/rackers/04.jpg",
