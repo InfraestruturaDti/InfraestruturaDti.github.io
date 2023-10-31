@@ -34,3 +34,4 @@ $Mensagem = @{
     }
 }
 New-MgChatMessage -ChatId $Session.Id -BodyParameter $Mensagem
+

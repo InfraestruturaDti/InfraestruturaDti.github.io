@@ -1,8 +1,11 @@
-#Connect-MgGraph
-#Import-Module Microsoft.Graph.Teams
+Connect-MgGraph
+Import-Module Microsoft.Graph.Teams
+Install-Module Microsoft.Graph.Teams
+
 #Defububdi remetente
 $MeuEmail = "bot.tito@dtidigital.com.br"
-$EmailDestinatario = "vinicius.farias@dtidigital.com.br"
+# $EmailDestinatario = "gabriel.estevao@dtidigital.com.br"
+$EmailDestinatario = "tito.chen@dtidigital.com.br"
 
 #Criando o chat
 $params = @{
