@@ -6,14 +6,8 @@ Utilize apenas imagens locais neste vetor, não links externos, não há suporte
 var imagens = [
 
     "imgs/lojinha-round_.gif",
-    "imgs/cervejaAtualizado.jpg",
-    "imgs/halloween1.gif",
-    "imgs/FeedbackWifi.png",
-    "imgs/Keepers.png",
-    "imgs/Halloween2.gif",
-    "imgs/gifcanva2.gif",
-    "imgs/agilistas.gif",
-    "imgs/Halloween3.gif",
+    "imgs/lojinha-round_.gif",
+
 
     ]; // array com as imagens
 var tempo = 6000; // tempo em milissegundos para trocar as imagens
