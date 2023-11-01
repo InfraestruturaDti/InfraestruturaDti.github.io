@@ -5,12 +5,14 @@ Utilize apenas imagens locais neste vetor, não links externos, não há suporte
 
 var imagens = [
 
-    "imgs/lojinha-round_.gif",
-    "imgs/lojinha-round_.gif",
-
+    "imgs/FeedbackWifi.png",
+    "imgs/Keepers.png",
+    "imgs/agilistas.gif",
+    "imgs/gifcanca2.gif",
+    
 
     ]; // array com as imagens
-var tempo = 6000; // tempo em milissegundos para trocar as imagens
+var tempo = 5000; // tempo em milissegundos para trocar as imagens
 var indice = 0; // indice atual da imagem
 
 function trocarImagem() {
