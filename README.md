@@ -19,9 +19,6 @@ Basta ir no arquivo 'script.js' e remover o endereço referente a imagem que des
 Lembrando que, caso seja excluido apenas o arquivo e não tenha sido removido a referencia dentro do 'script.js', irá apresentar uma pagina com um erro ao exibir a imagem.
 
 
-by ilustre
-tito.chen@dtdigital.com.br
-
 Para mais informações, procure a infra!
 =======
 Aqui estão os scripts da infra
