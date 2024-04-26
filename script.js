@@ -5,14 +5,55 @@ Utilize apenas imagens locais neste vetor, não links externos, não há suporte
 
 var imagens = [
 
-    "imgs/FeedbackWifi.png",
-    "imgs/Keepers.png",
-    "imgs/agilistas.gif",
-    "imgs/gifcanca2.gif",
+    "ImagesRubix/rubix1.png",
+"ImagesRubix/rubix2.png",
+"ImagesRubix/rubix3.png",
+"ImagesRubix/rubix4.png",
+"ImagesRubix/rubix5.png",
+"ImagesRubix/rubix6.png",
+"ImagesRubix/rubix7.png",
+"ImagesRubix/rubix8.png",
+"ImagesRubix/rubix9.png",
+"ImagesRubix/rubix10.png",
+"ImagesRubix/rubix11.png",
+"ImagesRubix/rubix12.png",
+"ImagesRubix/rubix13.png",
+"ImagesRubix/rubix14.png",
+"ImagesRubix/rubix15.png",
+"ImagesRubix/rubix16.png",
+"ImagesRubix/rubix17.png",
+"ImagesRubix/rubix18.png",
+"ImagesRubix/rubix19.png",
+"ImagesRubix/rubix20.png",
+"ImagesRubix/rubix21.png",
+"ImagesRubix/rubix22.png",
+"ImagesRubix/rubix23.png",
+"ImagesRubix/rubix24.png",
+"ImagesRubix/rubix25.png",
+"ImagesRubix/rubix26.png",
+"ImagesRubix/rubix27.png",
+"ImagesRubix/rubix28.png",
+"ImagesRubix/rubix29.png",
+"ImagesRubix/rubix30.png",
+"ImagesRubix/rubix31.png",
+"ImagesRubix/rubix32.png",
+"ImagesRubix/rubix33.png",
+"ImagesRubix/rubix34.png",
+"ImagesRubix/rubix35.png",
+"ImagesRubix/rubix36.png",
+"ImagesRubix/rubix37.png",
+"ImagesRubix/rubix38.png",
+"ImagesRubix/rubix39.png",
+"ImagesRubix/rubix40.png",
+"ImagesRubix/rubix41.png",
+"ImagesRubix/rubix42.png",
+"ImagesRubix/rubix43.png",
+"ImagesRubix/rubix44.png",
+
     
 
     ]; // array com as imagens
-var tempo = 5000; // tempo em milissegundos para trocar as imagens
+var tempo = 6000; // tempo em milissegundos para trocar as imagens
 var indice = 0; // indice atual da imagem
 
 function trocarImagem() {
