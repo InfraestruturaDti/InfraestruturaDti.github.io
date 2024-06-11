@@ -4,8 +4,6 @@ var imagensDpsDas18 = [
 
 ];
 var imagens = [
-    
-
     "imgs/Comunicados gerais-reunioes hibridas 1.png",
     "imgs/gifinfra1.gif",
     "imgs/liandra.gif",
