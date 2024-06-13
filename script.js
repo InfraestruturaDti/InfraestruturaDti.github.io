@@ -4,7 +4,7 @@ var imagensDpsDas18 = [
 
 ];
 var imagens = [
-    "imgs/Comunicados gerais-reunioes hibridas 1.png",
+    "imgs/Comunicados gerais-reunioes hibridas 1.jpg",
     "imgs/gifinfra1.gif",
     "imgs/liandra.gif",
     "imgs/gifinfra5.gif",
@@ -21,7 +21,7 @@ var imagens = [
     "imgs/gifdticlean3.gif",
     "imgs/gifdticlean2.gif",
     "imgs/gifdticlean1.gif",
-    "imgs/Comunicados gerais-cerveja 1.png",
+    "imgs/Comunicados gerais-cerveja 1.jpg",
     "imgs/Keepers.png",
 ]; // array com as imagens
 
