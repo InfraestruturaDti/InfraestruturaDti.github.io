@@ -4,14 +4,14 @@ var imagensDpsDas18 = [
 
 ];
 var imagens = [
+    "imgs/infraInicio.gif",
+    "imgs/infraTito.gif",
+    "imgs/infraVinicius.gif",
+    "imgs/infraVitor.gif",
+    "imgs/infraLiandra.gif",
+    "imgs/infraThais.gif",
+    "imgs/infraGustavo.gif",
     "imgs/Comunicados gerais-reunioes hibridas 1.jpg",
-    "imgs/gifinfra1.gif",
-    "imgs/liandra.gif",
-    "imgs/gifinfra5.gif",
-    "imgs/gifinfra4.gif",
-    "imgs/gifinfra2.gif",
-    "imgs/gifinfravitor.gif",
-    "imgs/gifinfra3.gif",
     "imgs/Comunicados gerais-acesso 1.png",
     "imgs/giffacilities1.gif",
     "imgs/giffacilities2.gif",
