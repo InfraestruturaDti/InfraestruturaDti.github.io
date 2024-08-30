@@ -1,5 +1,5 @@
 var imagensDpsDas18 = [
-    "imgs/Comunicados gerais-cerveja 1.png",
+    "imgs/Comunicados gerais-cerveja 1.jpg",
     "imgs/Comunicados gerais-acesso 1.png",
 
 ];
