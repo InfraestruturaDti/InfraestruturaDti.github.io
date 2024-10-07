@@ -48,3 +48,34 @@ ul {
 		background-color: #007bff;
 	}
 }
+
+#progressBarContainer {
+	position: fixed; /* Fixa o contêiner no topo da tela */
+	top: 1%; /* Posiciona o contêiner no topo da tela */
+	z-index: 9999; /* Garante que o contêiner fique acima de outros elementos */
+	display: flex;
+    width: 84.7%;
+    justify-content: space-between;
+}
+
+.progressBar {
+	display: flex;
+    flex-grow: 1;
+    height: 5px;
+    background-color: #8a8a8a;
+	opacity: 80%;
+    margin: 0 2px;
+    overflow: hidden;
+}
+
+.progress {
+	display: flex;
+    height: 5px;
+    width: 0;
+    background-color: #ffffff;
+
+}
+
+#paginacao-imagens{
+	opacity: 0%;
+}

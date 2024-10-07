@@ -1,23 +1,25 @@
+
+
 const IMAGENS = [
-'imgs/infraInicio.gif',
-    'imgs/infraTito.gif',
-    'imgs/infraVinicius.gif',
-    'imgs/infraVitor.gif',
-    'imgs/infraLiandra.gif',
-    'imgs/infraGustavo.gif',
-    'imgs/infraPedro.gif',
-    'imgs/infraThais.gif',
-'imgs/KeepersMesaLimpa.jpg',
-'imgs/KeepersPerifericos.jpg',
-    'imgs/giffacilities1.gif',
-    'imgs/giffacilities2.gif',
-    'imgs/giffacilities3.gif',
-    'imgs/giffacilities4.gif',
-    'imgs/gifdticlean3.gif',
-    'imgs/gifdticlean2.gif',
-    'imgs/gifdticlean1.gif',
-    'imgs/Comunicados gerais-cerveja 1.jpg',
-    'imgs/Keepers.png',
+	'imgs/infraInicio.gif',
+	'imgs/infraTito.gif',
+	'imgs/infraVinicius.gif',
+	'imgs/infraVitor.gif',
+	'imgs/infraLiandra.gif',
+	'imgs/infraGustavo.gif',
+	'imgs/infraPedro.gif',
+	'imgs/infraThais.gif',
+	'imgs/KeepersMesaLimpa.jpg',
+	'imgs/KeepersPerifericos.jpg',
+	'imgs/giffacilities1.gif',
+	'imgs/giffacilities2.gif',
+	'imgs/giffacilities3.gif',
+	'imgs/giffacilities4.gif',
+	'imgs/gifdticlean3.gif',
+	'imgs/gifdticlean2.gif',
+	'imgs/gifdticlean1.gif',
+	'imgs/Comunicados gerais-cerveja 1.jpg',
+	'imgs/Keepers.png',
 
 ];
 
@@ -26,7 +28,7 @@ const IMAGENS_DPS_18 = [];
 const LINKS = ['https://dti.ag/GestaoaVista'];
 
 const TEMPO = {
-	imagens: 35000,
+	imagens: 8000,
 	links: 45000,
 };
 
@@ -36,7 +38,6 @@ const estado = {
 	indiceLinks: 0,
 	temporizador: null,
 };
-
 function atualizarExibicao(indice = null) {
 	const isDepoisDas18 = eHorarioDepoisDas18h() && IMAGENS_DPS_18.length > 0;
 	const imagensAtual = isDepoisDas18 ? IMAGENS_DPS_18 : IMAGENS;
@@ -73,13 +74,15 @@ function atualizarBotoesPaginacao(indiceAtivo) {
 		});
 }
 
-function mostrarImagem(indice = null) {
-	clearTimeout(estado.temporizador);
-	atualizarExibicao(indice);
-	estado.temporizador = setTimeout(() => mostrarImagem(), TEMPO.imagens);
-}
+// function mostrarImagem(indice = null) {
+// 	barraProgresso();
+// 	clearTimeout(estado.temporizador);
+// 	atualizarExibicao(indice);
+// 	estado.temporizador = setTimeout(() => mostrarImagem(), TEMPO.imagens);
+// }
 
 function mostrarLink() {
+	barraProgresso();
 	clearTimeout(estado.temporizador);
 	document.getElementById('link-iframe').style.display = 'block';
 	document.getElementById('minha-imagem').style.display = 'none';
@@ -112,3 +115,45 @@ window.onload = function () {
 	inicializarPaginacao();
 	mostrarImagem();
 };
+
+function barraProgresso(indiceImagem) {
+    var progressBarContainer = document.getElementById('progressBarContainer');
+    progressBarContainer.innerHTML = ''; // Limpa barras de progresso antigas
+
+    var total_pages = eHorarioDepoisDas18h() && IMAGENS_DPS_18.length > 0 ? IMAGENS_DPS_18.length : IMAGENS.length;
+    var time_to_change = TEMPO.imagens;
+
+    var id; // Definindo o id do setInterval fora do loop
+
+    for(var i = 0; i < total_pages; i++) {
+        var progressBar = document.createElement('div');
+        progressBar.className = 'progressBar';
+        var progress = document.createElement('div');
+        progress.className = 'progress';
+        if(i < indiceImagem) {
+            progress.style.width = '100%'; // Se a imagem já foi mostrada, preenche a barra de progresso
+        } else if(i === indiceImagem) {
+            progress.style.width = '0%'; // Inicializa a barra de progresso da imagem atual com 0%
+            id = setInterval(frame, (time_to_change / 100), progress); // Chama setInterval apenas para a barra de progresso da imagem atual
+        }
+        progressBar.appendChild(progress);
+        progressBarContainer.appendChild(progressBar);
+    }
+
+    function frame(progress) {
+        var width = progress.style.width.replace('%', '') || 0;
+        if(width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            progress.style.width = width + '%'; 
+        }
+    }
+}
+
+function mostrarImagem(indice = null) {
+    clearTimeout(estado.temporizador);
+    var indiceAtual = atualizarExibicao(indice);
+    barraProgresso(indiceAtual); // Atualiza a barra de progresso quando uma nova imagem é mostrada
+    estado.temporizador = setTimeout(() => mostrarImagem(), TEMPO.imagens);
+} 	
