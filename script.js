@@ -16,8 +16,8 @@ const IMAGENS = [
 	'imgs/giffacilities3.gif',
 	'imgs/giffacilities4.gif',
 	'imgs/gifdticlean3.gif',
-	'imgs/gifdticlean2.gif',
 	'imgs/gifdticlean1.gif',
+	'imgs/gifdticlean2.gif',
 	'imgs/Comunicados gerais-cerveja 1.jpg',
 	'imgs/Keepers.png',
 
@@ -28,7 +28,7 @@ const IMAGENS_DPS_18 = [];
 const LINKS = ['https://dti.ag/GestaoaVista'];
 
 const TEMPO = {
-	imagens: 8000,
+	imagens: 12000,
 	links: 45000,
 };
 
