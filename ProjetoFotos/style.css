@@ -4,7 +4,9 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-	background-color: #2e2e2e;
+    background-color: #2e2e2e;
+    padding: 0 3%; /* Adiciona uma borda lateral de 5% */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */
 }
 
 .grid-container {
