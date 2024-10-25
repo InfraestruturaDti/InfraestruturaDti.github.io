@@ -26,7 +26,14 @@ Configurar o script a rodar todo dia:
     Instalar a extensao do chrome para dar f5 na pagina a cada 1h ou mais, para que a atualizacao do codigo surta efeito
 
 Iniciar e exibir a pagina:
-    para iniciar e instalar tudo pela primeira vez, execute o ScriptPs1/Install.ps1
+    Abra o powerShell
+    Executar o comando 'Set-ExecutionPolicy Unrestricted' 
+    execute o ScriptPs1/Install.ps1
+    Instalar node.js
+        winget install Schniz.fnm
+        fnm env --use-on-cd | Out-String | Invoke-Expression
+        fnm use --install-if-missing 20
+    Configurar o path do node.js
 
     para iniciar a pagina web, Abra o cmd e Navegue até o diretório do seu projeto e execute:
         browser-sync start --server --files "Imagens.js"

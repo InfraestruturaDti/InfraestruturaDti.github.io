@@ -9,11 +9,13 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(22, 1fr); /* Mantém 8 colunas */
+    grid-template-columns: repeat(16, 1fr); /* Mantém 16 colunas */
     gap: 10px;
-    width: auto;
-    height: 90vh; /* Ajusta a altura total da grade */
+    width: 100%; /* Garante que a grade ocupe toda a largura disponível */
+    height: 90vh;
 }
+
+
 
 .grid-item {
     position: relative;
