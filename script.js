@@ -1,6 +1,7 @@
 
 
 const IMAGENS = [
+	'imgs/Assento.jpg',
 	'imgs/infraInicio.gif',
 	'imgs/infraTito.gif',
 	'imgs/infraVinicius.gif',
@@ -9,7 +10,7 @@ const IMAGENS = [
 	'imgs/infraGustavo.gif',
 	'imgs/infraPedro.gif',
 	'imgs/infraThais.gif',
-	'imgs/KeepersMesaLimpa.jpg',
+	'imgs/Cerveja1.jpg',
 	'imgs/KeepersPerifericos.jpg',
 	'imgs/giffacilities1.gif',
 	'imgs/giffacilities2.gif',
@@ -18,8 +19,8 @@ const IMAGENS = [
 	'imgs/gifdticlean3.gif',
 	'imgs/gifdticlean1.gif',
 	'imgs/gifdticlean2.gif',
-	'imgs/Comunicados gerais-cerveja 1.jpg',
 	'imgs/Keepers.png',
+	'imgs/Cerveja2.jpg',
 
 ];
 
