@@ -11,7 +11,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr); /* Mantém 16 colunas */
+    grid-template-columns: repeat(12, 1fr); /* Mantém 16 colunas */
     gap: 10px;
     width: 100%; /* Garante que a grade ocupe toda a largura disponível */
     height: 90vh;
