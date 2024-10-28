@@ -23,8 +23,9 @@ Configurar o script a rodar todo dia:
     Em "Adicionar argumentos (opcional)", digite o caminho do init:
     -File "C:\ProjetoFotos\Init.ps1"
 
-    Instalar a extensao do chrome para dar f5 na pagina a cada 1h ou mais, para que a atualizacao do codigo surta efeito
+    Instalar e configurar o github
 
+    
 Iniciar e exibir a pagina:
     Abra o powerShell
     Executar o comando 'Set-ExecutionPolicy Unrestricted' 

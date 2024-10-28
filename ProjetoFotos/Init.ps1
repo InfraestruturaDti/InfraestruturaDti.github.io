@@ -1,5 +1,6 @@
 
 try {
+    Invoke-Expression -Command "git pull"
     
     # Connect-ExchangeOnline
     Connect-MgGraph 
