@@ -58,3 +58,8 @@ body {
 .fade-white::after {
     opacity: 1;
 }
+
+.borda {
+    z-index: 2; /* Garante que a borda fique acima da imagem */
+    pointer-events: none; /* Permite interações com elementos abaixo */
+}
