@@ -17,6 +17,7 @@ try {
 
 while ($true) {
     $horaAtual = (Get-Date).ToString("HH:mm")
+    Write-Output "Verificação de horario: $horaAtual"
     
     if ($horaAtual -eq $horaAlvo) {
         # Coloque aqui o código que deseja executar
