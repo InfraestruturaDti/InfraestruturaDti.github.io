@@ -5,13 +5,13 @@ try {
     Connect-MgGraph 
     Connect-AzureAD
 
-    # Invoke-Expression -Command "git pull"
-    # # Listar usuarios ativos
-    # Invoke-Expression -Command ".\ScriptPs1\ListarUser.ps1"
-    # # Baixar fotos dos usuarios
-    # Invoke-Expression -Command ".\ScriptPs1\ExportFotos.ps1"
-    # # atualizar variável de fotos
-    # Invoke-Expression -Command ".\ScriptPs1\AtualizarVarFotos.ps1"
+    Invoke-Expression -Command "git pull"
+    # Listar usuarios ativos
+    Invoke-Expression -Command ".\ScriptPs1\ListarUser.ps1"
+    # Baixar fotos dos usuarios
+    Invoke-Expression -Command ".\ScriptPs1\ExportFotos.ps1"
+    # atualizar variável de fotos
+    Invoke-Expression -Command ".\ScriptPs1\AtualizarVarFotos.ps1"
     
     $horaAlvo = "04:00"  # Defina o horário desejado no formato HH:mm
 
