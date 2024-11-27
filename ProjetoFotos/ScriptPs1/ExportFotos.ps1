@@ -7,9 +7,13 @@ $photoDirectory = ".\Fotos"
 $users = Import-Csv -Path ".\Users.csv"
 $tribos = Import-Csv -Path ".\ListaTribos.csv"
 $blacklist = Import-Csv -Path ".\BlackList.csv"
+$ListaFotos = Get-ChildItem -Path $photoDirectory -File
 
-Get-ChildItem -Path $photoDirectory -File | Remove-Item
+# Get-ChildItem -Path $photoDirectory -File | Remove-Item
+foreach ($teste in $ListaFotos){
+    Write-Host $teste
 
+}
 
 $i = 0
 foreach ($user in $users) {
@@ -18,13 +22,13 @@ foreach ($user in $users) {
         Write-Host "Skipping user $($user.UserPrincipalName) as they are in the blacklist."
         continue
     }
+    
     $i++
     write-host "$i out of $($users.count): $($user.UserPrincipalName)"
     
     try {
-        # Obtenha o ID do usuário pelo endereço de e-mail
-        $userId = (Get-MgUser -Filter "mail eq '$($user.UserPrincipalName)'").Id
-
+        # Nome do arquivo
+        $nameFormatted = $user.UserPrincipalName.Replace("@dtidigital.com.br", "").Replace(".", "-")
         # Nome do arquivo com base na tribo e no e-mail
         $tribo = $tribos | Where-Object { $_.'E-mail' -eq $user.UserPrincipalName } | Select-Object -ExpandProperty Tribo
         # Se a tribo não for encontrada, defina como "Novato"
@@ -32,12 +36,39 @@ foreach ($user in $users) {
             $tribo = "Novato"
         }
         $triboFormatted = $tribo.Split("-")[0].Trim().Replace(" ", "-")
-        $nameFormatted = $user.UserPrincipalName.Replace("@dtidigital.com.br", "").Replace(".", "-")
         $NameFile = "$triboFormatted-$nameFormatted"
-        # Obtenha os dados da foto
-        Get-MgUserPhotoContent -UserId $userId -OutFile ("{0}\{1}.jpg" -f $photoDirectory, $NameFile) -ErrorAction Stop
+        # Verifique se a foto já existe na lista de fotos
+        $existingPhoto = $ListaFotos | Where-Object { $_.Name -eq $NameFile + ".jpg" }
+
+        if ($existingPhoto) {
+            # Remova a foto existente da lista
+            $ListaFotos = $ListaFotos | Where-Object { $_.Name -ne $NameFile }
+            Write-Host "Skipping user $($user.UserPrincipalName) as they are already donwloaded."
+            continue
+        }
         
-    } catch {
+            # Obtenha o ID do usuário pelo endereço de e-mail
+            $userId = (Get-MgUser -Filter "mail eq '$($user.UserPrincipalName)'").Id
+
+
+            # Obtenha os dados da foto
+            Get-MgUserPhotoContent -UserId $userId -OutFile ("{0}\{1}.jpg" -f $photoDirectory, $NameFile) -ErrorAction Stop
+        
+        
+    }
+    catch {
         Write-Host "Unable to get photo for user $($user.UserPrincipalName)"
+    }
+}
+
+# Remover todas as fotos excedentes
+foreach ($photo in $ListaFotos) {
+    try {
+        # Remove o arquivo de foto
+        #Remove-Item -Path $photo.FullName -ErrorAction Stop
+        Write-Host "Removed photo: $($photo.Name)"
+    }
+    catch {
+        Write-Host "Failed to remove photo: $($photo.Name). Error: $_"
     }
 }

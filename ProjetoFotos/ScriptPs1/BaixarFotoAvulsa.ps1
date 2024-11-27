@@ -1,5 +1,5 @@
 Connect-MgGraph 
-$user = "caixa.jbl@dtidigital.com.br"
+$user = "alefi.cunha@dtidigital.com.br"
 $tribos = Import-Csv -Path ".\ListaTribos.csv"
 $blacklist = Import-Csv -Path ".\BlackList.csv"
 $photoDirectory = ".\Fotos"
@@ -12,7 +12,7 @@ $photoDirectory = ".\Fotos"
     $i++
     write-host "$i out of $($users.count): $($user)"
     
-    try {
+
         # Obtenha o ID do usuário pelo endereço de e-mail
         $userId = (Get-MgUser -Filter "mail eq '$($user)'").Id
 
@@ -28,6 +28,4 @@ $photoDirectory = ".\Fotos"
         # Obtenha os dados da foto
         Get-MgUserPhotoContent -UserId $userId -OutFile ("{0}\{1}.jpg" -f $photoDirectory, $NameFile) -ErrorAction Stop
         
-    } catch {
-       Write-Host "Unable to get photo for user $($user)"
-    }
+    
