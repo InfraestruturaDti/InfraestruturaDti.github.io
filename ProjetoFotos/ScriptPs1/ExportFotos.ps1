@@ -42,8 +42,8 @@ foreach ($user in $users) {
 
         if ($existingPhoto) {
             # Remova a foto existente da lista
-            $ListaFotos = $ListaFotos | Where-Object { $_.Name -ne $NameFile }
-            Write-Host "Skipping user $($user.UserPrincipalName) as they are already donwloaded."
+            $ListaFotos = $ListaFotos | Where-Object { $_.Name -ne $NameFile + ".jpg"}
+            Write-Host $NameFile + ".jpg - Skipping user $($user.UserPrincipalName) as they are already donwloaded."
             continue
         }
         
@@ -65,10 +65,11 @@ foreach ($user in $users) {
 foreach ($photo in $ListaFotos) {
     try {
         # Remove o arquivo de foto
-        #Remove-Item -Path $photo.FullName -ErrorAction Stop
-        Write-Host "Removed photo: $($photo.Name)"
+        Remove-Item -Path $photo.FullName -ErrorAction Stop
+        Write-Host "Removed photo: $($photo.FullName)"
     }
     catch {
         Write-Host "Failed to remove photo: $($photo.Name). Error: $_"
+        continue
     }
 }

@@ -1,5 +1,5 @@
 # Caminho para o arquivo CSV e o arquivo JS
-$ImgPath = ".\Fotos"
+$ImgPath = "C:\FotosColabs"
 $jsPath = ".\Imagens.js"
 
 
