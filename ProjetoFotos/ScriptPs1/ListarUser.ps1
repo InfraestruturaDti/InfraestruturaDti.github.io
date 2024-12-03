@@ -2,7 +2,7 @@
 #  Connect-ExchangeOnline
 write-host "Iniciando listaruser.ps1"
 #  Connect-AzureAD
-$FilePath = "C:\Users.csv"
+$FilePath = ".\Users.csv"
 # pegando usuarios ativos
 #$users = Get-MgUser -All | Select-Object DisplayName, Mail, AccountEnabled
 #$users | Export-Csv -Path $FilePath -Encoding UTF8 -NoTypeInformation
