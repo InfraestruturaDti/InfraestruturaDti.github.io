@@ -9,7 +9,7 @@ $arquivos = Get-ChildItem -Path $ImgPath
 $imagePaths = @()
 foreach ($arquivo in $arquivos) {
     $imagePath = $arquivo.Name
-    $imagePaths += """Fotos/$imagePath"""
+    $imagePaths += """$imagePath"""
 }
 
 # Converta a lista de caminhos de imagem em uma string formatada
