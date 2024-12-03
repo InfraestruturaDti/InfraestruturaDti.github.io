@@ -1,8 +1,8 @@
 Connect-MgGraph 
 $user = "alefi.cunha@dtidigital.com.br"
-$tribos = Import-Csv -Path ".\ListaTribos.csv"
+$tribos = Import-Csv -Path "C:\ListaTribos.csv"
 $blacklist = Import-Csv -Path ".\BlackList.csv"
-$photoDirectory = ".\Fotos"
+$photoDirectory = "C:\FotosColabs"
 
     # Verifique se o usuário está na blacklist
     if ($blacklist.UserPrincipalName -contains $user) {

@@ -2,10 +2,10 @@
 
 
 # Defina o diretório onde as fotos serão salvas
-$photoDirectory = ".\Fotos"
+$photoDirectory = "C:\FotosColabs"
 # Importe os dados do arquivo CSV
-$users = Import-Csv -Path ".\Users.csv"
-$tribos = Import-Csv -Path ".\ListaTribos.csv"
+$users = Import-Csv -Path "C:\Users.csv"
+$tribos = Import-Csv -Path "C:\ListaTribos.csv"
 $blacklist = Import-Csv -Path ".\BlackList.csv"
 $ListaFotos = Get-ChildItem -Path $photoDirectory -File
 
