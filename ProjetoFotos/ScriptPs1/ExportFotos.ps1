@@ -5,7 +5,7 @@
 $photoDirectory = "C:\FotosColabs"
 # Importe os dados do arquivo CSV
 $users = Import-Csv -Path "C:\Users.csv"
-$tribos = Import-Csv -Path "C:\ListaTribos.csv"
+$tribos = Import-Csv -Path ".\ListaTribos.csv"
 $blacklist = Import-Csv -Path ".\BlackList.csv"
 $ListaFotos = Get-ChildItem -Path $photoDirectory -File
 
