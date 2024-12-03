@@ -1,5 +1,5 @@
 # Caminho para o arquivo CSV e o arquivo JS
-$ImgPath = "C:\FotosColabs"
+$ImgPath = ".\FotosColabs"
 $jsPath = ".\Imagens.js"
 
 
@@ -9,7 +9,7 @@ $arquivos = Get-ChildItem -Path $ImgPath
 $imagePaths = @()
 foreach ($arquivo in $arquivos) {
     $imagePath = $arquivo.Name
-    $imagePaths += """C:\\FotosColabs\\$imagePath"""
+    $imagePaths += """C:\FotosColabs\$imagePath"""
 }
 
 # Converta a lista de caminhos de imagem em uma string formatada

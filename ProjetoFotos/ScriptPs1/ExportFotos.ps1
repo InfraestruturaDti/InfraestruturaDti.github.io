@@ -2,7 +2,7 @@
 
 
 # Defina o diretório onde as fotos serão salvas
-$photoDirectory = "C:\FotosColabs"
+$photoDirectory = ".\FotosColabs"
 # Importe os dados do arquivo CSV
 $users = Import-Csv -Path ".\Users.csv"
 $tribos = Import-Csv -Path ".\ListaTribos.csv"
