@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         imgElement.src = imageName;
         imgElement.alt = imageName;
 
-        const parts = imageName.replace('Fotos/', '').split('-');
+        const parts = imageName.replace('FotosColabs\\', '').split('-');
         const triboName = parts.length > 0 ? parts[0] : 'default';
         const bordaName = BORDAS[triboName] || BORDAS['default'];
 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedImg = selectedItem.querySelector('img:not(.borda)');
         const newImage = imagensDisponiveis[randomImageIndex];
 
-        const parts = newImage.replace('Fotos/', '').split('-');
+        const parts = newImage.replace('FotosColabs\\', '').split('-');
         const triboName = parts.length > 0 ? parts[0] : 'default';
         const bordaName = BORDAS[triboName] || BORDAS['default'];
         const selectedBorder = selectedItem.querySelector('.borda');
