@@ -13,7 +13,7 @@ try {
     # atualizar variável de fotos
     Invoke-Expression -Command ".\ScriptPs1\AtualizarVarFotos.ps1"
     
-    $horaAlvo = "15:00"  # Defina o horário desejado no formato HH:mm
+    $horaAlvo = "12:00"  # Defina o horário desejado no formato HH:mm
 
 while ($true) {
      $horaAtual = (Get-Date).ToString("HH:mm")
