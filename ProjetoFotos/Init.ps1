@@ -5,7 +5,8 @@ try {
     Connect-MgGraph 
     Connect-AzureAD
 
-    Invoke-Expression -Command "git pull"
+    Invoke-Expression -Command "git fetch origin"
+    Invoke-Expression -Command "git reset --hard origin"
     # Listar usuarios ativos
     Invoke-Expression -Command ".\ScriptPs1\ListarUser.ps1"
     # Baixar fotos dos usuarios
