@@ -7,19 +7,15 @@ $photoDirectory = ".\FotosColabs"
 $users = Import-Csv -Path ".\Users.csv"
 $tribos = Import-Csv -Path ".\ListaTribos.csv"
 $blacklist = Import-Csv -Path ".\BlackList.csv"
-$ListaFotos = Get-ChildItem -Path $photoDirectory -File
 
 #Resetando todas as fotos
 $currentDay = (Get-Date).DayOfWeek
-if ($currentDay -ne 'Saturday' -and $currentDay -ne 'Sunday' -and $currentDay -ne 'Monday') {
+if ($currentDay -eq 'Saturday' -or $currentDay -eq 'Sunday' -or $currentDay -eq 'Monday') {
     Get-ChildItem -Path $photoDirectory -File | Remove-Item -Force
-
+    
 }
+$ListaFotos = Get-ChildItem -Path $photoDirectory -File
 # Get-ChildItem -Path $photoDirectory -File | Remove-Item
-foreach ($teste in $ListaFotos){
-    Write-Host $teste
-
-}
 
 $i = 0
 foreach ($user in $users) {
