@@ -15,7 +15,6 @@ try {
     Invoke-Expression -Command ".\ScriptPs1\AtualizarVarFotos.ps1"
     
     $horaAlvo = "12:00"  # Defina o horário desejado no formato HH:mm
-
 while ($true) {
      $horaAtual = (Get-Date).ToString("HH:mm")
      Write-Output "Verificação de horario: $horaAtual, de $horaAlvo"

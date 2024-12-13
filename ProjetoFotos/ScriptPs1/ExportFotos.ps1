@@ -9,6 +9,12 @@ $tribos = Import-Csv -Path ".\ListaTribos.csv"
 $blacklist = Import-Csv -Path ".\BlackList.csv"
 $ListaFotos = Get-ChildItem -Path $photoDirectory -File
 
+#Resetando todas as fotos
+$currentDay = (Get-Date).DayOfWeek
+if ($currentDay -ne 'Saturday' -and $currentDay -ne 'Sunday' -and $currentDay -ne 'Monday') {
+    Get-ChildItem -Path $photoDirectory -File | Remove-Item -Force
+
+}
 # Get-ChildItem -Path $photoDirectory -File | Remove-Item
 foreach ($teste in $ListaFotos){
     Write-Host $teste
