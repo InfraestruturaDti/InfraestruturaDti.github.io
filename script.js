@@ -16,9 +16,6 @@ const IMAGENS = [
 	'imgs/giffacilities2.gif',
 	'imgs/giffacilities3.gif',
 	'imgs/giffacilities4.gif',
-	'imgs/gifdticlean3.gif',
-	'imgs/gifdticlean1.gif',
-	'imgs/gifdticlean2.gif',
 	'imgs/Keepers.png',
 	'imgs/Cerveja2.jpg',
 
