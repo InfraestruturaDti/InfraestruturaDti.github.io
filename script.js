@@ -1,7 +1,7 @@
 
 
 const IMAGENS = [
-	'imgs/Assento.jpg',
+	'imgs/Mesa limpa 1.png',
 	'imgs/infraInicio.gif',
 	'imgs/infraTito.gif',
 	'imgs/infraVinicius.gif',
@@ -10,14 +10,15 @@ const IMAGENS = [
 	'imgs/infraGustavo.gif',
 	'imgs/infraPedro.gif',
 	'imgs/infraThais.gif',
-	'imgs/Cerveja1.jpg',
-	'imgs/KeepersPerifericos.jpg',
+	'imgs/Cerveja1.png',
+	'imgs/Perifericos.png',
 	'imgs/giffacilities1.gif',
 	'imgs/giffacilities2.gif',
 	'imgs/giffacilities3.gif',
 	'imgs/giffacilities4.gif',
 	'imgs/Keepers.png',
-	'imgs/Cerveja2.jpg',
+	'imgs/Cerveja2.png',
+	'imgs/Cerveja3.png',
 
 ];
 
