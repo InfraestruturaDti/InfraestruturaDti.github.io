@@ -19,6 +19,7 @@ const IMAGENS = [
 	'imgs/Keepers.png',
 	'imgs/Cerveja2.png',
 	'imgs/Cerveja3.png',
+	'imgs/Interditado.jpg',
 
 ];
 
