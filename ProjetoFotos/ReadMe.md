@@ -1,41 +1,31 @@
-Configurar o script a rodar todo dia:
+Iniciar, configurar e exibir a pagina:
 
-    Abrir o Agendador de Tarefas:
-
-    Pressione Win + R, digite taskschd.msc e pressione Enter.
-    Criar uma Nova Tarefa:
-
-    No painel à direita, clique em "Criar Tarefa...".
-    Configurar a Tarefa:
-
-    Geral:
-
-    Dê um nome para a tarefa.
-    Marque "Executar com privilégios mais altos" se necessário.
-    Disparadores:
-
-    Clique em "Novo...".
-    Configure para iniciar a tarefa "Diariamente" e escolha a hora desejada.
-    Ações:
-
-    Clique em "Novo...".
-    Em "Programa/script", digite powershell.
-    Em "Adicionar argumentos (opcional)", digite o caminho do init:
-    -File "C:\ProjetoFotos\Init.ps1"
-
-    Instalar e configurar o github
-
+    Abra o power shell como administrador
+    executar os comandos:
     
-Iniciar e exibir a pagina:
-    Abra o powerShell
-    Executar o comando 'Set-ExecutionPolicy Unrestricted' 
-    execute o ScriptPs1/Install.ps1
-    Instalar node.js
+    'Set-ExecutionPolicy Unrestricted' 
+    ScriptPs1/Install.ps1
+
+Instalar node.js
+        
         winget install Schniz.fnm
         fnm env --use-on-cd | Out-String | Invoke-Expression
         fnm use --install-if-missing 20
-    Configurar o path do node.js
+        Configurar o path do node.js
 
-    para iniciar a pagina web, Abra o cmd e Navegue até o diretório do seu projeto e execute:
-        browser-sync start --server --files "Imagens.js"
+Instruções para executar a página:
+
+    1- Atualize o arquivo ListaTribos.csv 
+        O arquivo deve estar no seguinte formato:
+
+        "Tribo","E-mail"
+        "Gaia - Keepers","tito.chen@dtidigital.com.br"
+        
+    2- Abra duas instancias do powershell como administrador.
+        Em uma delas, execute o arquivo ./init.ps1
+        realize o login (2 vezes) utilizando o acesso do proojetos.foto.copa@dtidigital.com.br
+        Na segunda, execute o comando: 
+            browser-sync start --server --files "Imagens.js"
+        após isso, o navegador irá abrir automaticamente uma guia com o link da pagina.
+                localhost:3000
     
