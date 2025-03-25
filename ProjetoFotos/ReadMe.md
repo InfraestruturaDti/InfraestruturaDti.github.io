@@ -22,6 +22,7 @@ Instruções para executar a página:
         "Gaia - Keepers","tito.chen@dtidigital.com.br"
         
     2- Abra duas instancias do powershell como administrador.
+        Navegue no terminal ate a localização da pasta ProjetoFotos (comumente fica dentro de c:/projetos/infraestruturadti.github.io/ProjetoFotos)
         Em uma delas, execute o arquivo ./init.ps1
         realize o login (2 vezes) utilizando o acesso do proojetos.foto.copa@dtidigital.com.br
         Na segunda, execute o comando: 
@@ -29,3 +30,6 @@ Instruções para executar a página:
         após isso, o navegador irá abrir automaticamente uma guia com o link da pagina.
                 localhost:3000
     
+alternativa para baixar foto:
+https://dtidigital.sharepoint.com/_layouts/15/userphoto.aspx?size=L&username=bot.tito@dtidigital.com.br
+trocar o email pelo email do colab
