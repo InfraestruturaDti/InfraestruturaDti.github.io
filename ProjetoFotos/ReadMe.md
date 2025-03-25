@@ -21,6 +21,8 @@ Instruções para executar a página:
         "Tribo","E-mail"
         "Gaia - Keepers","tito.chen@dtidigital.com.br"
         
+    1.1- Salve o arquivo e faça o commit (toda vez que for atualziado o lista tribos, o lista tribo novo deve ser commitado. cosnequentemente, a atualização do lista tribos pode ser realziada em outro dispositivo, desde que seja feito o commit após a atualziação).
+
     2- Abra duas instancias do powershell como administrador.
         Navegue no terminal ate a localização da pasta ProjetoFotos (comumente fica dentro de c:/projetos/infraestruturadti.github.io/ProjetoFotos)
         Em uma delas, execute o arquivo ./init.ps1
