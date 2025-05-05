@@ -10,6 +10,7 @@ PowerShell 1:
 Faça login. A senha atual sempre estará fixada no Xindows + V
 PowerShell 2:
 
+    cd c:/projetos/infraestruturadti.github.io/ProjetoFotos
     browser-sync start --server --files "Imagens.js"
 
 
@@ -43,13 +44,7 @@ Iniciar, configurar e exibir a pagina:
 
     Abra o power shell como administrador
     executar os comandos:
-    
+
+    cd c:/projetos/infraestruturadti.github.io/ProjetoFotos
     'Set-ExecutionPolicy Unrestricted' 
     ScriptPs1/Install.ps1
-
-Instalar node.js
-        
-        winget install Schniz.fnm
-        fnm env --use-on-cd | Out-String | Invoke-Expression
-        fnm use --install-if-missing 20
-        Configurar o path do node.js
