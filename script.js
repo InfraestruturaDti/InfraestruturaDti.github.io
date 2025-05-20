@@ -8,6 +8,7 @@ const IMAGENS = [
 	'imgs/Facilities5.gif',
 	'imgs/Perifericos.jpg',
 	'imgs/FaleKeepers.gif',
+	'imgs/Horario.gif',
 	'imgs/Infra1.gif',
 	'imgs/Infra2.gif',
 	'imgs/Infra3.gif',
