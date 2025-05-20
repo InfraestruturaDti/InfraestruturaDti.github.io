@@ -3,9 +3,9 @@ Import-Module Microsoft.Graph.Teams
 Install-Module Microsoft.Graph.Teams
 
 #Defububdi remetente
-$MeuEmail = "bot.tito@dtidigital.com.br"
+$MeuEmail = "tito.chen@dtidigital.com.br"
 # $EmailDestinatario = "gabriel.estevao@dtidigital.com.br"
-$EmailDestinatario = "tito.chen@dtidigital.com.br"
+$EmailDestinatario = "luana.fleury@dtidigital.com.br"
 
 #Criando o chat
 $params = @{
@@ -29,7 +29,7 @@ $params = @{
 }
 $Session = New-MgChat -BodyParameter $params
 #Lendo o arquivo txt
-$Text = Get-Content -Path C:\projetos\PowerShell\Roteiro.txt 
+$Text = Get-Content -Path C:\projetos\InfraestruturaDti.github.io\PowerShell\Roteiro.txt 
 #Transformando as linhas do arquivo em um array 
 $Text.GetType() | Format-Table -AutoSize
 #Listando as linhas do arquivo

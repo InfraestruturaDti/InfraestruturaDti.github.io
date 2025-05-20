@@ -7,6 +7,7 @@ const IMAGENS = [
 	'imgs/Facilities4.gif',
 	'imgs/Facilities5.gif',
 	'imgs/Perifericos.jpg',
+	'imgs/FaleKeepers.gif',
 	'imgs/Infra1.gif',
 	'imgs/Infra2.gif',
 	'imgs/Infra3.gif',
