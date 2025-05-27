@@ -5,7 +5,7 @@ Install-Module Microsoft.Graph.Teams
 #Defububdi remetente
 $MeuEmail = "tito.chen@dtidigital.com.br"
 # $EmailDestinatario = "gabriel.estevao@dtidigital.com.br"
-$EmailDestinatario = "luana.fleury@dtidigital.com.br"
+$EmailDestinatario = "vitor.jau@dtidigital.com.br"
 
 #Criando o chat
 $params = @{
