@@ -6,9 +6,6 @@ const IMAGENS = [
 	'imgs/Facilities3.gif',
 	'imgs/Facilities4.gif',
 	'imgs/Facilities5.gif',
-	'imgs/Perifericos.jpg',
-	'imgs/FaleKeepers.gif',
-	'imgs/Horario.gif',
 	'imgs/Infra1.gif',
 	'imgs/Infra2.gif',
 	'imgs/Infra3.gif',
@@ -17,10 +14,10 @@ const IMAGENS = [
 	'imgs/Infra6.gif',
 	'imgs/Infra7.gif',
 	'imgs/Infra8.gif',
-	'imgs/MesaLimpa.jpg',
-	'imgs/Cerveja1.jpg',
-	'imgs/Cerveja2.jpg',
-	'imgs/Cerveja3.jpg',
+	'imgs/BPCerveja.gif',
+	'imgs/BPFone.gif',
+	'imgs/BPFuncionamento.gif',
+	'imgs/BPLanche.gif',
 
 ];
 
