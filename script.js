@@ -1,19 +1,8 @@
 
 
 const IMAGENS = [
-	'imgs/Facilities1.gif',
-	'imgs/Facilities2.gif',
-	'imgs/Facilities3.gif',
-	'imgs/Facilities4.gif',
-	'imgs/Facilities5.gif',
-	'imgs/Infra1.gif',
-	'imgs/Infra2.gif',
-	'imgs/Infra3.gif',
-	'imgs/Infra4.gif',
-	'imgs/Infra5.gif',
-	'imgs/Infra6.gif',
-	'imgs/Infra7.gif',
-	'imgs/Infra8.gif',
+	'imgs/Facilities.gif',
+	'imgs/Infra.gif',
 	'imgs/BPCerveja.gif',
 	'imgs/BPFone.gif',
 	'imgs/BPFuncionamento.gif',
@@ -26,7 +15,7 @@ const IMAGENS_DPS_18 = [];
 const LINKS = ['https://dti.ag/GestaoaVista'];
 
 const TEMPO = {
-	imagens: 12000,
+	imagens: 30000,
 	links: 45000,
 };
 
