@@ -7,7 +7,7 @@ const IMAGENS = [
 	'imgs/BPFone.gif',
 	'imgs/BPFuncionamento.gif',
 	'imgs/BPLanche.gif',
-	'imgs/dotflow-fotocomlogo-tv.jpg',
+	'imgs/fotocomlogotv.jpg',
 
 ];
 
