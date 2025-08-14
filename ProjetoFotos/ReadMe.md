@@ -45,6 +45,6 @@ Iniciar, configurar e exibir a pagina:
     Abra o power shell como administrador
     executar os comandos:
 
-    cd c:/projetos/infraestruturadti.github.io/ProjetoFotos
     'Set-ExecutionPolicy Unrestricted' 
+    cd c:/projetos/infraestruturadti.github.io/ProjetoFotos
     ScriptPs1/Install.ps1
