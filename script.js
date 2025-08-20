@@ -7,8 +7,7 @@ const IMAGENS = [
 	'imgs/BPFone.gif',
 	'imgs/BPFuncionamento.gif',
 	'imgs/BPLanche.gif',
-	'imgs/fotocomlogotv.jpg',
-
+	
 ];
 
 const IMAGENS_DPS_18 = [];
