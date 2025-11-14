@@ -35,8 +35,17 @@ foreach ($user in $users) {
         $tribo = $tribos | Where-Object { $_.'E-mail' -eq $user.UserPrincipalName } | Select-Object -ExpandProperty Tribo
         # Se a tribo não for encontrada, defina como "Novato"
         if (-not $tribo) {
+
+                switch ($email.ToLower()) {
+
+        # EXEMPLOS — adicione seus e-mails de exceção aqui:
+        "raoni.resende@dtisistemas.com.br"  { $tribo = "Gaia"; break }
+        
+        default { 
             $tribo = "Novato"
         }
+        }
+    }
         $triboFormatted = $tribo.Split("-")[0].Trim().Replace(" ", "-")
         $NameFile = "$triboFormatted-$nameFormatted"
         # Verifique se a foto já existe na lista de fotos
