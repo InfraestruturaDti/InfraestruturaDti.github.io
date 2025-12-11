@@ -30,6 +30,7 @@ while ($true) {
         Invoke-Expression -Command ".\ScriptPs1\ExportFotos.ps1"
         # atualizar variável de fotos
         Invoke-Expression -Command ".\ScriptPs1\AtualizarVarFotos.ps1"
+        #TODO: Criar um arquivo para evitar duplicidade do codigo acima
     }else {
         Start-Sleep -Seconds 50
         <# Action when all if and elseif conditions are false #>
