@@ -7,8 +7,9 @@ $FilePath = ".\Users.csv"
 #$users = Get-MgUser -All | Select-Object DisplayName, Mail, AccountEnabled
 #$users | Export-Csv -Path $FilePath -Encoding UTF8 -NoTypeInformation
 # Obtenha todos os usuários
-$users = Get-AzureADUser -All $true |Where-Object { $_.AccountEnabled -eq $true -and $_.UserPrincipalName.EndsWith("@dtidigital.com.br") -and $_.UserPrincipalName -notlike "*#EXT#*"}| Select-Object DisplayName, UserPrincipalName
-
+#$users = Get-AzureADUser -All $true |Where-Object { $_.AccountEnabled -eq $true -and $_.UserPrincipalName.EndsWith("@dtidigital.com.br") -and $_.UserPrincipalName -notlike "*#EXT#*"}| Select-Object DisplayName, UserPrincipalName
+$users = Get-MgUser -All -ConsistencyLevel eventual -Filter "accountEnabled eq true and userType eq 'Member' and endsWith(userPrincipalName,'@dtidigital.com.br')" -Select "displayName,userPrincipalName"
+write-host "$users"
 # Exporte para CSV
 $users | Export-Csv -Path $FilePath -NoTypeInformation -Encoding UTF8
 

@@ -2,8 +2,8 @@
 try {
     
     # Connect-ExchangeOnline
-    Connect-MgGraph 
-    Connect-AzureAD
+    Connect-MgGraph
+    #Connect-AzureAD
 
     Invoke-Expression -Command "git fetch origin"
     Invoke-Expression -Command "git reset --hard origin"
