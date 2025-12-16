@@ -1,5 +1,5 @@
 Connect-MgGraph 
-$user = "liandra.ciolete@dtidigital.com.br"
+$user = "adminteltec@dtidigital.com.br"
 $tribos = Import-Csv -Path ".\ListaTribos.csv"
 $blacklist = Import-Csv -Path ".\BlackList.csv"
 $photoDirectory = ".\FotosColabs"
