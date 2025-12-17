@@ -28,7 +28,7 @@ foreach ($user in $users) {
     $i++
     write-host "$i out of $($users.count): $($user.UserPrincipalName)"
     
-    try {
+    #try {
         # Nome do arquivo
         $nameFormatted = $user.UserPrincipalName.Replace("@dtidigital.com.br", "").Replace(".", "-")
         # Nome do arquivo com base na tribo e no e-mail
@@ -66,10 +66,10 @@ foreach ($user in $users) {
             Get-MgUserPhotoContent -UserId $userId -OutFile ("{0}\{1}.jpg" -f $photoDirectory, $NameFile) -ErrorAction Stop
         
         
-    }
-    catch {
-        Write-Host "Unable to get photo for user $($user.UserPrincipalName)"
-    }
+    #}
+    #catch {
+     #   Write-Host "Unable to get photo for user $($user.UserPrincipalName)"
+    #}
 }
 
 # Remover todas as fotos excedentes
