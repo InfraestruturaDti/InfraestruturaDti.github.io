@@ -3,7 +3,6 @@
 
 const IMAGENS = [
 	['imgs/Facilities.gif', 30],
-	['imgs/Infra.gif', 10	],
 	['imgs/BPCerveja.gif', 30],
 	['imgs/BPFone.gif', 25],
 	['imgs/BPFuncionamento.gif', 25],
