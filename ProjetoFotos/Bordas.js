@@ -6,6 +6,10 @@ export const BORDAS = {
     'Aurora': 'Bordas/Aurora.png',
     'Rubix': 'Bordas/Rubix.png',
     'Hakuna': 'Bordas/Hakuna.png',
+    'Suricatos': 'Bordas/Suricatos.png',
+    'Javalis': 'Bordas/Javalis.png',
+    'Origami': 'Bordas/Origami.png',
+    'Garoa': 'Bordas/Garoa.png',
     'default': 'Bordas/Curinga.png'
 
 }
