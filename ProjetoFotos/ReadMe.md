@@ -29,7 +29,8 @@ Abra **duas** janelas do PowerShell **como administrador**.
 
 ```powershell
 cd c:/projetos/infraestruturadti.github.io/ProjetoFotos
-./Init.ps1
+    ./init.ps1 cd c:/projetos/infraestruturadti.github.io/ProjetoFotos
+    ./init.ps1
 ```
 
 Faça o login quando o navegador pedir (pode pedir duas vezes). A senha atual sempre estará fixada no **Windows + V**.
@@ -39,7 +40,9 @@ Deixe essa janela aberta: ela atualiza as fotos sozinha todo dia às 12:00.
 
 ```powershell
 cd c:/projetos/infraestruturadti.github.io/ProjetoFotos
-browser-sync start --server --files "Imagens.js"
+	fnm env --use-on-cd | Out-String | Invoke-Expression
+    browser-sync start --server --files "Imagens.js"
+
 ```
 
 O navegador abre sozinho em `localhost:3000`. Deixe em tela cheia (F11).
