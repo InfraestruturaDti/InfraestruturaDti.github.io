@@ -2,6 +2,7 @@
 
 
 const IMAGENS = [
+	['imgs/Infra.gif', 30],
 	['imgs/Facilities.gif', 30],
 	['imgs/setembro.png', 30],
 	['imgs/BPPCerveja.gif', 25],
